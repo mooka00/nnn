@@ -7,7 +7,7 @@ button.addEventListener('click', () => {
     document.getElementById('thirderror').textContent = ""
     document.getElementById('seconderror').textContent = ""
     document.getElementById('result').textContent = ""
-    const first= +document.getElementById("firstInput").value
+    const first = +document.getElementById("firstInput").value
     const second = document.getElementById("secondInput").value
     const third = +document.getElementById("thirdInput").value
     if (Number.isNaN(first)) {
@@ -17,7 +17,7 @@ button.addEventListener('click', () => {
     if (Number.isNaN(third)) {
         document.getElementById('thirderror').textContent = "error вы ввели не число"
         error = true
-    } 
+    }
     if (second === "+") {
         result = first + third
     } else if (second === "-") {

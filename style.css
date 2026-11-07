@@ -1,0 +1,16 @@
+#firsterror, #seconderror, #thirderror{
+    color: red;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+}
+#firstInput, #secondInput, #thirdInput{
+    width: 200px;
+    height: 150px;
+    font-size: 30px;
+}
+#result{
+    font-size: 50px;
+}
