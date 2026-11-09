@@ -6,6 +6,14 @@ const result1 = document.getElementById('result')
 const selected = document.getElementById('selected')
 button1.addEventListener('click', () => {
     const input = +document.getElementById('input').value
+    
+    if(Number.isNaN(input)) {
+        alert('вы ввели не число'); return
+    }
+    else if (input < 1){
+        alert('вы ввели число меньши 1'); return
+    }
+
     if (currency2.value === 'RUB'){
         if (currency1.value === 'RUB') {
             result = input / 1
